@@ -1,4 +1,4 @@
-import EmailOptinForm from "./components/EmailOptinForm";
+import MailerLiteForm from "./components/MailerLiteForm";
 
 export default function Home() {
   const tickerItems = [
@@ -69,16 +69,7 @@ export default function Home() {
           schedule, and intensity - not just looks.
         </p>
         <div className="mt-8 w-full max-w-3xl">
-          <EmailOptinForm
-            inputId="hero-email"
-            buttonLabel="Join Waitlist ⚡"
-            showLabel={false}
-            formClassName="bg-transparent p-0"
-            rowClassName="flex-col sm:flex-row"
-            inputClassName="h-14 bg-[#151515] border-white/10 text-base px-6"
-            buttonClassName="h-14 w-full sm:w-auto px-10 text-base shadow-[0_0_40px_rgba(209,255,38,0.45)]"
-            messageClassName="text-sm text-center"
-          />
+          <MailerLiteForm />
         </div>
       </main>
 
@@ -216,16 +207,7 @@ export default function Home() {
           Be first in line.
         </p>
         <div className="mx-auto mt-10 w-full max-w-3xl">
-          <EmailOptinForm
-            inputId="footer-email"
-            buttonLabel="Join Waitlist ⚡"
-            showLabel={false}
-            formClassName="bg-transparent p-0"
-            rowClassName="flex-col sm:flex-row"
-            inputClassName="h-14 bg-[#151515] border-white/10 text-base px-6"
-            buttonClassName="h-14 w-full sm:w-auto px-10 text-base shadow-[0_0_40px_rgba(209,255,38,0.45)]"
-            messageClassName="text-sm text-center"
-          />
+          <MailerLiteForm />
         </div>
       </footer>
     </div>

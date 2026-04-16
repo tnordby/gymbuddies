@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#430c00",
+              "on-background": "#ffffff",
+              "on-primary": "#526700",
+              "inverse-primary": "#526700",
+              "surface-variant": "#262626",
+              "inverse-surface": "#fcf9f8",
+              "surface-bright": "#2c2c2c",
+              "outline": "#767575",
+              "secondary-dim": "#00d4ec",
+              "surface": "#0e0e0e",
+              "background": "#0e0e0e",
+              "surface-container-high": "#20201f",
+              "primary-fixed": "#cefc22",
+              "surface-container-lowest": "#000000",
+              "on-tertiary-container": "#250400",
+              "on-error": "#450900",
+              "surface-dim": "#0e0e0e",
+              "on-surface": "#ffffff",
+              "secondary-container": "#006875",
+              "on-primary-fixed-variant": "#546900",
+              "tertiary-container": "#ff5722",
+              "error-container": "#b92902",
+              "surface-container-low": "#131313",
+              "primary-container": "#cefc22",
+              "on-tertiary-fixed-variant": "#6f1a00",
+              "surface-container-highest": "#262626",
+              "on-error-container": "#ffd2c8",
+              "on-secondary-fixed-variant": "#005964",
+              "secondary-fixed": "#26e6ff",
+              "surface-tint": "#f4ffc9",
+              "error-dim": "#d53d18",
+              "outline-variant": "#484847",
+              "tertiary-dim": "#ff734a",
+              "primary": "#f4ffc9",
+              "on-primary-container": "#4b5e00",
+              "on-secondary-fixed": "#003a42",
+              "tertiary-fixed": "#ff9475",
+              "error": "#ff7351",
+              "on-secondary": "#004d57",
+              "tertiary-fixed-dim": "#ff7d57",
+              "primary-dim": "#c1ed00",
+              "on-secondary-container": "#e8fbff",
+              "secondary": "#00e3fd",
+              "primary-fixed-dim": "#c1ed00",
+              "on-tertiary-fixed": "#340800",
+              "secondary-fixed-dim": "#00d7f0",
+              "tertiary": "#ff734a",
+              "on-surface-variant": "#adaaaa",
+              "surface-container": "#1a1a1a",
+              "inverse-on-surface": "#565555",
+              "on-primary-fixed": "#3b4a00"
+            },
+            fontFamily: {
+              "headline": ["Lexend"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        .text-shadow-strong {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+        }
+        .glass-gradient {
+            background: linear-gradient(180deg, transparent 0%, rgba(14, 14, 14, 0.9) 80%, #0e0e0e 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen selection:bg-primary selection:text-on-primary overflow-hidden">
+<header class="fixed top-0 w-full z-50 bg-[#0e0e0e]/60 backdrop-blur-xl flex items-center justify-between px-6 h-16 w-full no-border bg-gradient-to-b from-[#131313] to-transparent shadow-none">
+<div class="flex items-center gap-3 active:scale-95 transition-transform duration-200">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container border border-outline-variant/15">
+<img class="w-full h-full object-cover" data-alt="User profile avatar showing young woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT7MtV53GADkEbMr_DFTbbzOWdUEGT4cyYPetn3lVKJTJKG9cZKKgy7QNYvJxtq8J9VLJ3Iw0lsk4jBQp2XRf07430sY-bwgDBxW-nXQBAIl8E4IGNbqWFEJ9XlJr5ZWsmwx78xnERfODV0FuC7cTEXFgHTcxp3zOibCLsRRg5JwEnElALQKDpNAQAHjx2PMWemzPV5SXgiWfDZQNnrVy0GJt1LKULHBCHCG27zQo23GgbUoYBudFJaoSuRo0aJ51JynnaEqSlBcRD"/>
+</div>
+</div>
+<h1 class="font-['Lexend'] font-black italic text-[#D1FF26] tracking-tighter text-2xl">GymBuddies</h1>
+<button class="text-gray-400 hover:opacity-80 transition-opacity active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</header>
+<main class="relative h-screen w-full pt-16 pb-20 flex flex-col items-center justify-center overflow-hidden">
+<div class="relative w-full max-w-md px-4 h-full flex flex-col justify-center">
+<div class="absolute top-2 left-1/2 -translate-x-1/2 z-20 flex gap-1.5 w-full px-8">
+<div class="h-1 flex-1 bg-on-background rounded-full opacity-100"></div>
+<div class="h-1 flex-1 bg-on-background rounded-full opacity-30"></div>
+<div class="h-1 flex-1 bg-on-background rounded-full opacity-30"></div>
+</div>
+<div class="relative h-[636px] rounded-[2rem] overflow-hidden shadow-2xl bg-surface-container-low group">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Athletic man lifting weights in industrial gym" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC33efXiGDPWDIz9_zpMFn_wHI8Wqgnka3PQKBFcC93x0r1liBLdqeScsuCNGD26Lhkf2ojr--uhQD05PhqJeWpJ31bhmlQ1wEUxlSEb4du7SQ81m6UgNpzeUii_TxjSBPC4VxqdaybPsrfOWkzqFQiDaTibetq0JnZoG-6nGFgIRkVpNhWY1wTJjGfEo4rLSj-1oYFlrQngHfFsysRl_V6O7RfIE4RumRCCHF8jikNwtoqyS7AA06z7rD94LVOxBSl1A3LUudhQaLC"/>
+<div class="absolute inset-0 glass-gradient pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-full p-8 flex flex-col gap-4">
+<div class="flex items-end justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline text-5xl font-black tracking-tight text-on-background leading-none">
+                                MARCUS, 26
+                            </h2>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="text-on-surface-variant font-medium text-sm tracking-wide">2.4 MILES AWAY</span>
+</div>
+</div>
+<div class="flex items-center justify-center w-16 h-16 rounded-full bg-surface/40 backdrop-blur-md border border-outline-variant/15">
+<div class="relative flex items-center justify-center w-12 h-12">
+<svg class="absolute inset-0 w-full h-full -rotate-90">
+<circle class="text-surface-container-high" cx="24" cy="24" fill="transparent" r="20" stroke="currentColor" stroke-width="4"></circle>
+<circle cx="24" cy="24" fill="transparent" r="20" stroke="url(#match-gradient)" stroke-dasharray="125.6" stroke-dashoffset="25.1" stroke-width="4"></circle>
+</svg>
+<defs>
+<lineargradient id="match-gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00e3fd"></stop>
+<stop offset="100%" stop-color="#f4ffc9"></stop>
+</lineargradient>
+</defs>
+<span class="font-headline font-bold text-xs text-primary">80%</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container font-label text-[10px] py-1 px-3 rounded-md uppercase tracking-widest font-bold">POWERLIFTING</span>
+<span class="bg-secondary-container text-on-secondary-container font-label text-[10px] py-1 px-3 rounded-md uppercase tracking-widest font-bold">WORKOUT PARTNER</span>
+</div>
+<p class="text-on-surface-variant text-sm line-clamp-2 max-w-[85%] font-medium leading-relaxed">
+                        Looking for a spotter who doesn't mind heavy sets and early morning sessions. Focus on hypertrophy.
+                    </p>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-center gap-6">
+<button class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-error border border-outline-variant/15 shadow-lg active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<button class="flex-1 max-w-[180px] h-16 rounded-full bg-gradient-to-br from-primary-dim to-primary text-on-primary-fixed flex items-center justify-center gap-2 shadow-[0_10px_30px_rgba(206,252,34,0.3)] active:scale-95 transition-transform duration-200">
+<span class="font-headline font-extrabold uppercase tracking-tighter text-lg">MATCH</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</button>
+<button class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-secondary border border-outline-variant/15 shadow-lg active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined text-3xl">star</span>
+</button>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 w-full z-50 pb-safe bg-[#0e0e0e]/60 backdrop-blur-xl flex justify-around items-center h-20 px-4 w-full no-border tonal-shift-bg shadow-[0_-20px_40px_rgba(0,0,0,0.4)]">
+<button class="flex flex-col items-center justify-center text-[#D1FF26] bg-[#D1FF26]/10 rounded-full p-3 active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined active-icon" data-icon="style">style</span>
+</button>
+<button class="flex flex-col items-center justify-center text-gray-500 p-3 hover:text-[#f4ffc9] transition-colors active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+</button>
+<button class="flex flex-col items-center justify-center text-gray-500 p-3 hover:text-[#f4ffc9] transition-colors active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</nav>
+</body></html>

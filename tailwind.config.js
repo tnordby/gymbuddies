@@ -1,0 +1,68 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  content: ["./app/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      colors: {
+        "on-tertiary": "#430c00",
+        "on-background": "#ffffff",
+        "on-primary": "#526700",
+        "inverse-primary": "#526700",
+        "surface-variant": "#262626",
+        "inverse-surface": "#fcf9f8",
+        "surface-bright": "#2c2c2c",
+        outline: "#767575",
+        "secondary-dim": "#00d4ec",
+        surface: "#0e0e0e",
+        background: "#0e0e0e",
+        "surface-container-high": "#20201f",
+        "primary-fixed": "#cefc22",
+        "surface-container-lowest": "#000000",
+        "on-tertiary-container": "#250400",
+        "on-error": "#450900",
+        "surface-dim": "#0e0e0e",
+        "on-surface": "#ffffff",
+        "secondary-container": "#006875",
+        "on-primary-fixed-variant": "#546900",
+        "tertiary-container": "#ff5722",
+        "error-container": "#b92902",
+        "surface-container-low": "#131313",
+        "primary-container": "#cefc22",
+        "on-tertiary-fixed-variant": "#6f1a00",
+        "surface-container-highest": "#262626",
+        "on-error-container": "#ffd2c8",
+        "on-secondary-fixed-variant": "#005964",
+        "secondary-fixed": "#26e6ff",
+        "surface-tint": "#f4ffc9",
+        "error-dim": "#d53d18",
+        "outline-variant": "#484847",
+        "tertiary-dim": "#ff734a",
+        primary: "#f4ffc9",
+        "on-primary-container": "#4b5e00",
+        "on-secondary-fixed": "#003a42",
+        "tertiary-fixed": "#ff9475",
+        error: "#ff7351",
+        "on-secondary": "#004d57",
+        "tertiary-fixed-dim": "#ff7d57",
+        "primary-dim": "#c1ed00",
+        "on-secondary-container": "#e8fbff",
+        secondary: "#00e3fd",
+        "primary-fixed-dim": "#c1ed00",
+        "on-tertiary-fixed": "#340800",
+        "secondary-fixed-dim": "#00d7f0",
+        tertiary: "#ff734a",
+        "on-surface-variant": "#adaaaa",
+        "surface-container": "#1a1a1a",
+        "inverse-on-surface": "#565555",
+        "on-primary-fixed": "#3b4a00"
+      },
+      fontFamily: {
+        headline: ["Lexend", "sans-serif"],
+        body: ["Plus Jakarta Sans", "sans-serif"],
+        label: ["Lexend", "sans-serif"]
+      }
+    }
+  },
+  plugins: []
+};
